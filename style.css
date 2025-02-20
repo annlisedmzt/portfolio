@@ -71,16 +71,19 @@ a {
 nav {
     display: flex;
     height: 50px;
-    width: 50%;
+    width: auto;
     position: fixed;
-    top: 10px;
-    left: 0;
     right: 0;
     margin: 0 auto;
     font-weight: bold;
     z-index: 11;
     align-items: center;
     justify-content: center;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transform: translate(120px, 0) rotate(90deg);
+    top: 10px;
+    transform: translate(125px, 155px) rotate(90deg);
 
     button {
         font-size: 0.8rem;
@@ -659,6 +662,9 @@ footer {
         width: 100%;
         flex-wrap: wrap;
         position: absolute;
+        background-color: transparent;
+        top: 0;
+        transform: none;
 
         button {
             font-size: 0.8rem;
@@ -846,6 +852,14 @@ footer {
 }
 
 @media (min-width: 501px) and (max-width: 800px) {
+
+    nav {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transform: none;
+    }
+
     #about {
         margin: 50px 0;
 

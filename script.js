@@ -3,7 +3,7 @@ const text1_options = [
     "⛅L'inéluctable app météo"
 ];
 const text2_options = [
-    "Création d'un site web ainsi que des visuels pour les réseaux sociaux, dans le cadre d'un weekend musical entre ami(e)s. L'idée étant de rassembler les informations pour les invités, le visuel du site évoluant à chaque nouveau festival.",
+    "Création d'un site web ainsi que des visuels pour les réseaux sociaux, dans le cadre d'un weekend musical entre ami(e)s. L'idée étant de rassembler les informations pour les invités, le visuel du site évoluant à chaque nouvelle édition.",
     "Que le dev qui n'a jamais codé une app météorologique parle maintenant ou se taise à jamais !"
 ];
 
@@ -103,25 +103,19 @@ optionPrevious.onclick = function () {
     }, 650);
 };
 
-// 1. Récupérer les éléments du DOM
 const openPopupBtn = document.getElementById('openPopupBtn');
 const popup = document.getElementById('popup');
 const closePopupBtn = document.getElementById('closePopupBtn');
 
-// 2. Afficher la popup au clic sur le bouton “Ouvrir”
 openPopupBtn.addEventListener('click', () => {
     popup.style.display = 'flex';
-    // on utilise “flex” pour activer justify-content/align-items
 });
 
-// 3. Fermer la popup au clic sur la croix de fermeture
 closePopupBtn.addEventListener('click', () => {
     popup.style.display = 'none';
 });
 
-// 4. Fermer la popup en cliquant à l’extérieur du contenu
 popup.addEventListener('click', (event) => {
-    // Si l’utilisateur clique sur le fond transparent (et non pas dans la .popup-content)
     if (event.target === popup) {
         popup.style.display = 'none';
     }
