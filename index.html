@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>🍊​ Ann-Lise Dmzt - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg bg-top"></div>
+    <div class="bg bg-bot"></div>
+
+    <nav>
+        <button><a href="#hello">HELLO</a></button>
+        <button><a href="#about">À PROPOS</a></button>
+        <button><a href="#projets">PROJETS</a></button>
+        <button> <a href="#contact">CONTACT</a></button>
+    </nav>
+
+    <section id="hello">
+        <p class="hello"><span class="color-secondary">Ann-Lise Dmzt</span>, <br> <span class="italic">développeuse
+                front-end & graphiste.</span></p>
+        <p>Passionnée par les nouvelles technologies et ayant un attrait particulier pour le
+            design, je suis un véritable couteau suisse ! Alliant débrouillardise et créativité. J’utilise mes
+            compétences pour créer des applications web et sites élégants,
+            intuitifs et performants, toujours orientés vers une expérience
+            utilisateur optimale.</p>
+    </section>
+
+    <section id="about">
+        <div class="row">
+            <div class="professional-xp">
+                <h2>EXPÉRIENCES</h2>
+                <p class="company-name bold">#Honoré Gaming : Juin 2022 à Septembre 2024 <br>
+                    Développeuse frontend <br>
+                    Technos principales : <span class="txt-shadow">Angular</span> & <span
+                        class="txt-shadow">TypeScript</span>
+                </p>
+                <ul class="missions">
+                    <li>Intégrations de nouvelles fonctionnalités</li>
+                    <li>Amélioration continue et optimisation des performances</li>
+                    <li>Migrations de jeux de casino en Stencil.JS</li>
+                    <li>Résolutions de bugs et maintenances des différentes plateformes</li>
+                    <li>Créations et intégrations de bannières et de contenus publicitaires</li>
+                    <li>Collaboration avec l'équipe Back-end, Design, QA...</li>
+                </ul>
+                <ul class="projets-hg">
+                    <p>Réalisations principales : </p>
+                    <li>Migrations de jeux : Roulette Française, SpinWin, Machine à sous ;</li>
+                    <li>Refonte complète de la plateforme mobile des Paris Sportifs et Hippique ;</li>
+                    <li>Création d'un nouveau jeu de loterie...</li>
+                </ul>
+
+            </div>
+            <div class="skills">
+                <h2>SKILLS</h2>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/html.png" alt="HTML5">
+                    <p>HTML5</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/css.png" alt="CSS3">
+                    <p>CSS3</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/js.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/typescript.png" alt="Typescript">
+                    <p>TypeScript</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/angular.png" alt="Angular">
+                    <p>Angular</p>
+                </div>
+
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/react.png" alt="React">
+                    <p>React</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/stenciljs.png" alt="Stencil.Js">
+                    <p>Stencil.Js</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/sass.png" alt="Sass">
+                    <p>Sass</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/bootstrap.png" alt="Bootstrap">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/tailwind.png" alt="Tailwind">
+                    <p>Tailwind</p>
+                </div>
+                <br>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/figma.png" alt="Figma">
+                    <p>Figma</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/photoshop.png" alt="Photoshop">
+                    <p>Photoshop</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/illustrator.png" alt="Illustrator">
+                    <p>Illustrator</p>
+                </div>
+                <div class="techno">
+                    <img class="icon-techno" src="images/icons-technos/affinity.png" alt="Affinity Designer 2">
+                    <p>Affinity</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projets">
+        <div id="carousel-wrapper">
+            <div id="menu">
+                <div id="current-option">
+                    <span id="current-option-project-name" data-previous-text="" data-next-text=""></span>
+                    <!-- <span id="current-option-text3" data-previous-text="" data-next-text=""></span> -->
+                    <span id="current-option-project-description" data-previous-text="" data-next-text=""></span>
+                    <span id="current-option-technos" data-previous-text="" data-next-text=""></span>
+                    <a href="#" id="current-option-link" target="_blank" rel="noopener noreferrer" data-previous-text=""
+                        data-next-text="">Lien vers le site</a>
+                </div>
+                <button id="previous-option"></button>
+                <button id="next-option"></button>
+            </div>
+            <div id="image"></div>
+        </div>
+        <p class="github">Retrouvez plus de projets sur <a href="https://github.com/annlisedmzt">GitHub</a></p>
+    </section>
+
+    <section id="contact">
+        <div class="container-contact">
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label for="name">*Nom :</label><br />
+                    <input type="text" name="name" id="name" required />
+                </p>
+                <p>
+                    <label for="email">*Email :</label><br />
+                    <input type="email" name="email" id="email" required />
+                </p>
+                <p>
+                    <label for="message">*Message :</label><br />
+                    <textarea name="message" id="message" required></textarea>
+                </p>
+                <p>
+                    <button type="submit">Envoyer</button>
+                </p>
+            </form>
+            <div class="linkedin">
+                <p>Vous pouvez également me contacter sur <a
+                        href="https://www.linkedin.com/in/ann-lise-dumazet/">Linkedin</a> ou en savoir plus
+                    sur mon parcours en y découvrant mon CV.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>&copy; Ann-Lise Dmzt, 2025</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
