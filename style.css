@@ -153,8 +153,10 @@ section {
     -moz-box-shadow: 10px 10px 5px 0px rgba(247, 105, 62, 0.75);
 }
 
-.professional-xp p {
+
+.professional-xp {
     letter-spacing: -1px;
+
 }
 
 .techno {
